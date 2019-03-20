@@ -1,0 +1,358 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$Osvald :'Oswald', sans-serif;
+$Helvetica: "Helvetica";
+@mixin padding_margin ($pad,$marg){
+    padding: $pad;
+    margin: $marg;
+}
+@mixin text__size-weight-family-color ($size,$weight,$family,$color){   
+    font-size: $size ;  
+    font-weight: $weight;
+    font-family:$family;
+    color:$color;   
+    
+    vertical-align: baseline;
+}
+@mixin flex ($aligin,$justify,$direction,$wrap_nowrap){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: $aligin;
+    -ms-flex-align: $aligin;
+    align-items: $aligin;
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+    -ms-flex-wrap: $wrap_nowrap;
+    flex-wrap: $wrap_nowrap;
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    @include text__size-weight-family-color(18px,300,$Helvetica,black);
+    
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ampedWifi__img{
+    height: 37px;
+    max-width: 220px;
+   
+}
+.main-header{
+    border-bottom: 2px solid #ccc;
+    border-top: 1px solid #ccc; 
+    background: #fff;
+    height: 82px;
+}
+.wrap-header{
+    @include flex(center,center,row,wrap);
+    @include padding_margin(10px 0 0 0 , 0 auto 0 auto );
+    height: 100%;
+    max-width: 1220px;
+}
+.ampedWifi{
+    width: 75%;
+    @include flex(flex-start,center,column,nowrap);
+    @include padding_margin(0 0 0 30px, -12px 0 0 0  ) ;
+}
+.contact{
+    width: 25%;    
+    @include flex(flex-start,center,column,nowrap);
+    @include padding_margin(0 0 0 8px, 0 0 -6px 0  ) ;
+}
+p.contact__text, p.contact__number {
+    @include text__size-weight-family-color(17px,300,$Helvetica,black);
+
+    @include padding_margin(0,  0  );
+}
+
+.wrapper {
+    width: 100%;
+    @include flex(center,center,column,nowrap);
+}
+.wrapper .container{
+    max-width: 1220px;
+    width: 100%;   
+    -webkit-box-shadow: 0 5px 11px 2px rgba(0,9,30,0.20);   
+    box-shadow: 0 5px 11px 2px rgba(0,9,30,0.20);
+    border: 1px solid #dfdfdf ;
+    border-radius: 6px;
+    @include flex(flex-start,center,row,nowrap);
+    @include padding_margin(0 0 130px 0, 15px 0 0 0 ) ;
+    
+}
+.video{
+    
+    height: auto;
+    width: 100%;
+    @include padding_margin(0 0 0 0, -2px 0 5px 0  ) ;
+}
+.container__main{
+    width: 65.5%;
+    @include padding_margin(0 30px 0 30px, 0 ) ;
+   
+}
+.container__sidebar {
+    width: 34.5%;
+    @include padding_margin(5px 15px 0 30px, 0 ) ;
+    @include flex(flex-end,flex-start,column,nowrap);
+}
+.container__sidebar .wrap-sidebar-img{
+    width: 74.3%;
+    
+}
+.img-5star{
+    @include padding_margin(0, -4px 0 0 0  ) ;
+    
+}
+h1.title{
+    @include text__size-weight-family-color(55px,bolder,$Osvald,black);
+    line-height: 1.1;
+    @include padding_margin(0 0 12px 0, 25px 0 12px 0 ) ;
+    border-bottom: 1px solid lightgray;
+}
+h2{
+    @include text__size-weight-family-color(32px,bolder,$Osvald,black);
+    line-height: 1.1;
+    @include padding_margin(0, 20px 0 20px 0 ) ;
+}
+p{
+    @include padding_margin(0,0 0 10px 0 ) ;
+    line-height: 1.6666666667;
+}
+b{
+    font-weight: 700;
+}
+li{
+    line-height: 1.6666666667;
+}
+a{
+    border-bottom: dotted 1px #004eff; 
+    text-decoration: none; 
+    cursor: pointer;
+    @include text__size-weight-family-color(18px,bolder,$Helvetica, #0054ff);
+
+    &:hover{
+        color: #0e529e;
+        text-decoration: none;
+    }
+}
+blockquote{
+    background: #ffffe2;
+    border: 0px solid #d6e7ff;
+    color: #000;  
+    border-left: 10px solid #f9d46b;
+    min-height: 20px;   
+    @include padding_margin(19px,0 0 20px -15px  ) ;    
+}
+.third-section{
+    @include padding_margin(20px 0 0 0 ,0 ) ;
+}
+
+
+.dotted-block{
+    background: #fdffc0;
+    @include padding_margin(10px 10px 0 10px,0 0 8px 0  ) ;
+    border: 2px dashed #c2864b;
+    
+    width: 100%;
+}
+ol{
+    @include padding_margin(0 0 0 40px,0 0 10px 0 ) ;
+    
+    list-style: decimal ;
+      
+}
+.btn-check {
+    @include padding_margin(20px,0 0 0 0 ) ;
+    @include text__size-weight-family-color(18px,bolder,$Helvetica, #fff);
+    @include flex(center,center,column,nowrap);
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background: #ff5100;
+    border-color: #ff5100;
+    cursor: pointer;
+    width: 100%;
+       
+        &:hover{
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+            cursor: pointer;
+        }
+}
+.about-us .about-us__title{
+    @include padding_margin(0 0,10px 0) ;
+    @include text__size-weight-family-color(14px,900,$Helvetica,  #646464);
+    
+   line-height: 1.6666666667;
+}
+ 
+
+.about-us{
+    @include padding_margin(0 30px 0 30px ,0) ;
+    background: #f1f1f1;    
+    max-width: 1220px;
+}
+.about-us__text  {
+    @include text__size-weight-family-color(12px,normal,$Helvetica,  #646464);
+    line-height: normal;
+    @include padding_margin(0 ,10px 0 10px 0) ;
+}
+.about-us__title b a{
+    @include text__size-weight-family-color(14px,bolder,$Helvetica, #0054ff );
+    line-height: normal;  
+   
+}
+.about-us .about-us__title a{
+    border-bottom: 0;
+    &:hover{
+        &:hover{
+            color: #0e529e;
+            text-decoration: none;
+        }
+    }
+}
+
+.container__about-us{
+    width: 100%;
+    background: #f1f1f1; 
+    @include padding_margin(10px 0 ,100px 0 -60px 0) ;
+    @include flex(center,center,column,nowrap); 
+}
+.wrap-footer{
+    @include flex(center,center,column,nowrap); 
+    word-break: break-all;
+    @include text__size-weight-family-color(12px,normal,$Helvetica,  #646464);
+    line-height: normal;
+    word-break: break-all;
+    @include padding_margin(30px 0 30px 0  ,50px 0 0 0) ;    
+    background: #fff;    
+    border-top: 1px solid #ccc;
+    width: 100%;
+    
+}
+.wrap-footer   p{   
+    text-align: center;
+}
+.wrap-footer .block-flex{
+    @include flex(center,center,row,nowrap); 
+    @include padding_margin( 0  ,10px  0 10px 0) ; 
+}
+.block-flex p{
+    @include padding_margin(0  ,0) ; 
+}
+footer{
+    @include padding_margin(0 20px 0 20px    ,0) ;
+    width: 100%; 
+}
+
+// -------------@media --------------------------------------------------------
+
+ @media screen and (max-width: 990px) {
+    .container__sidebar{
+        display: none;
+        
+    }
+    .container__main{
+        width: 100%;
+    }
+    
+    .ampedWifi{
+        
+        @include padding_margin(0 0 0 30px , -12px auto 0 auto );
+       
+    }
+    
+ }
+ @media screen and (max-width: 765px) {
+    .contact__text{
+        display: none;
+    }
+    .wrap-header{
+        @include flex(center,center,column,wrap);
+        @include padding_margin(25px 0 0 0 , 0 auto 0 auto );
+       
+    }
+    .ampedWifi{
+        width: 100%;
+        @include flex(center,center,column,nowrap);
+        @include padding_margin(0 0 0 0 , -12px auto 0 auto );
+            
+    }
+   
+    .contact{
+        @include flex(center,center,row,nowrap);
+        width: 100%;
+    }
+    .ampedWifi__img{
+        height: 29px;
+        max-width: 193px;
+       
+    }
+    .contact__number{
+        font-weight: 600;        
+        font-size: 18px !important;
+        color: #000;
+   
+    }
+    .contact{
+        @include padding_margin(0 0 0 0, 0 0 -6px 0  ) ;
+    }
+    .wrapper .container{      
+        -webkit-box-shadow: none;      
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+    }
+
+ }
+ @media screen and (max-width: 500px) {
+    h1.title{
+        @include text__size-weight-family-color(33px,bolder,$Osvald,black);
+        
+        line-height: 37px;
+    }
+    .about-us{
+        @include padding_margin(0 15px 0 15px ,0) ;
+       
+    }
+    .container__main{
+       
+        @include padding_margin(0 15px 0 15px, 0 ) ;
+       
+    }
+    p ,li{
+        line-height: 1.42;
+    }
+
+ }
+
+@media screen and (min-width:990px){
+    .about-us{
+        @include padding_margin(0 15px 0 15px ,0) ;
+       
+    }
+}
+
+
+
+
+// -------------@media --------------------------------------------------------

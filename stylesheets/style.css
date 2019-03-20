@@ -1,0 +1,702 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 29, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 32, ../sass/style.scss */
+body {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Helvetica";
+  color: black;
+  vertical-align: baseline;
+}
+
+/* line 37, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 42, ../sass/style.scss */
+.ampedWifi__img {
+  height: 37px;
+  max-width: 220px;
+}
+
+/* line 47, ../sass/style.scss */
+.main-header {
+  border-bottom: 2px solid #ccc;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  height: 82px;
+}
+
+/* line 53, ../sass/style.scss */
+.wrap-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px 0 0 0;
+  margin: 0 auto 0 auto;
+  height: 100%;
+  max-width: 1220px;
+}
+
+/* line 59, ../sass/style.scss */
+.ampedWifi {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0 0 0 30px;
+  margin: -12px 0 0 0;
+}
+
+/* line 64, ../sass/style.scss */
+.contact {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0 0 0 8px;
+  margin: 0 0 -6px 0;
+}
+
+/* line 69, ../sass/style.scss */
+p.contact__text, p.contact__number {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Helvetica";
+  color: black;
+  vertical-align: baseline;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 75, ../sass/style.scss */
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* line 79, ../sass/style.scss */
+.wrapper .container {
+  max-width: 1220px;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 11px 2px rgba(0, 9, 30, 0.2);
+  box-shadow: 0 5px 11px 2px rgba(0, 9, 30, 0.2);
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0 0 130px 0;
+  margin: 15px 0 0 0;
+}
+
+/* line 89, ../sass/style.scss */
+.video {
+  height: auto;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: -2px 0 5px 0;
+}
+
+/* line 95, ../sass/style.scss */
+.container__main {
+  width: 65.5%;
+  padding: 0 30px 0 30px;
+  margin: 0;
+}
+
+/* line 100, ../sass/style.scss */
+.container__sidebar {
+  width: 34.5%;
+  padding: 5px 15px 0 30px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* line 105, ../sass/style.scss */
+.container__sidebar .wrap-sidebar-img {
+  width: 74.3%;
+}
+
+/* line 109, ../sass/style.scss */
+.img-5star {
+  padding: 0;
+  margin: -4px 0 0 0;
+}
+
+/* line 113, ../sass/style.scss */
+h1.title {
+  font-size: 55px;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  vertical-align: baseline;
+  line-height: 1.1;
+  padding: 0 0 12px 0;
+  margin: 25px 0 12px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+/* line 119, ../sass/style.scss */
+h2 {
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  vertical-align: baseline;
+  line-height: 1.1;
+  padding: 0;
+  margin: 20px 0 20px 0;
+}
+
+/* line 124, ../sass/style.scss */
+p {
+  padding: 0;
+  margin: 0 0 10px 0;
+  line-height: 1.6666666667;
+}
+
+/* line 128, ../sass/style.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 131, ../sass/style.scss */
+li {
+  line-height: 1.6666666667;
+}
+
+/* line 134, ../sass/style.scss */
+a {
+  border-bottom: dotted 1px #004eff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Helvetica";
+  color: #0054ff;
+  vertical-align: baseline;
+}
+/* line 140, ../sass/style.scss */
+a:hover {
+  color: #0e529e;
+  text-decoration: none;
+}
+
+/* line 145, ../sass/style.scss */
+blockquote {
+  background: #ffffe2;
+  border: 0px solid #d6e7ff;
+  color: #000;
+  border-left: 10px solid #f9d46b;
+  min-height: 20px;
+  padding: 19px;
+  margin: 0 0 20px -15px;
+}
+
+/* line 153, ../sass/style.scss */
+.third-section {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+/* line 158, ../sass/style.scss */
+.dotted-block {
+  background: #fdffc0;
+  padding: 10px 10px 0 10px;
+  margin: 0 0 8px 0;
+  border: 2px dashed #c2864b;
+  width: 100%;
+}
+
+/* line 165, ../sass/style.scss */
+ol {
+  padding: 0 0 0 40px;
+  margin: 0 0 10px 0;
+  list-style: decimal;
+}
+
+/* line 171, ../sass/style.scss */
+.btn-check {
+  padding: 20px;
+  margin: 0 0 0 0;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Helvetica";
+  color: #fff;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background: #ff5100;
+  border-color: #ff5100;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 182, ../sass/style.scss */
+.btn-check:hover {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  cursor: pointer;
+}
+
+/* line 189, ../sass/style.scss */
+.about-us .about-us__title {
+  padding: 0 0;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Helvetica";
+  color: #646464;
+  vertical-align: baseline;
+  line-height: 1.6666666667;
+}
+
+/* line 197, ../sass/style.scss */
+.about-us {
+  padding: 0 30px 0 30px;
+  margin: 0;
+  background: #f1f1f1;
+  max-width: 1220px;
+}
+
+/* line 202, ../sass/style.scss */
+.about-us__text {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Helvetica";
+  color: #646464;
+  vertical-align: baseline;
+  line-height: normal;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+/* line 207, ../sass/style.scss */
+.about-us__title b a {
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: "Helvetica";
+  color: #0054ff;
+  vertical-align: baseline;
+  line-height: normal;
+}
+
+/* line 212, ../sass/style.scss */
+.about-us .about-us__title a {
+  border-bottom: 0;
+}
+/* line 215, ../sass/style.scss */
+.about-us .about-us__title a:hover:hover {
+  color: #0e529e;
+  text-decoration: none;
+}
+
+/* line 222, ../sass/style.scss */
+.container__about-us {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 10px 0;
+  margin: 100px 0 -60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* line 228, ../sass/style.scss */
+.wrap-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  word-break: break-all;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Helvetica";
+  color: #646464;
+  vertical-align: baseline;
+  line-height: normal;
+  word-break: break-all;
+  padding: 30px 0 30px 0;
+  margin: 50px 0 0 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+/* line 240, ../sass/style.scss */
+.wrap-footer p {
+  text-align: center;
+}
+
+/* line 243, ../sass/style.scss */
+.wrap-footer .block-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+/* line 247, ../sass/style.scss */
+.block-flex p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 250, ../sass/style.scss */
+footer {
+  padding: 0 20px 0 20px;
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 258, ../sass/style.scss */
+  .container__sidebar {
+    display: none;
+  }
+
+  /* line 262, ../sass/style.scss */
+  .container__main {
+    width: 100%;
+  }
+
+  /* line 266, ../sass/style.scss */
+  .ampedWifi {
+    padding: 0 0 0 30px;
+    margin: -12px auto 0 auto;
+  }
+}
+@media screen and (max-width: 765px) {
+  /* line 274, ../sass/style.scss */
+  .contact__text {
+    display: none;
+  }
+
+  /* line 277, ../sass/style.scss */
+  .wrap-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 25px 0 0 0;
+    margin: 0 auto 0 auto;
+  }
+
+  /* line 282, ../sass/style.scss */
+  .ampedWifi {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 0 0 0 0;
+    margin: -12px auto 0 auto;
+  }
+
+  /* line 289, ../sass/style.scss */
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  /* line 293, ../sass/style.scss */
+  .ampedWifi__img {
+    height: 29px;
+    max-width: 193px;
+  }
+
+  /* line 298, ../sass/style.scss */
+  .contact__number {
+    font-weight: 600;
+    font-size: 18px !important;
+    color: #000;
+  }
+
+  /* line 304, ../sass/style.scss */
+  .contact {
+    padding: 0 0 0 0;
+    margin: 0 0 -6px 0;
+  }
+
+  /* line 307, ../sass/style.scss */
+  .wrapper .container {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 315, ../sass/style.scss */
+  h1.title {
+    font-size: 33px;
+    font-weight: bolder;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    vertical-align: baseline;
+    line-height: 37px;
+  }
+
+  /* line 320, ../sass/style.scss */
+  .about-us {
+    padding: 0 15px 0 15px;
+    margin: 0;
+  }
+
+  /* line 324, ../sass/style.scss */
+  .container__main {
+    padding: 0 15px 0 15px;
+    margin: 0;
+  }
+
+  /* line 329, ../sass/style.scss */
+  p, li {
+    line-height: 1.42;
+  }
+}
+@media screen and (min-width: 990px) {
+  /* line 336, ../sass/style.scss */
+  .about-us {
+    padding: 0 15px 0 15px;
+    margin: 0;
+  }
+}
